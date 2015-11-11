@@ -1,0 +1,45 @@
+{
+	"uid": "google-recaptcha",
+	"name": "Google reCaptcha Plugin",
+	"description": "This is a plugin that enables using Google reCaptcha for authetication",
+	"version": "0.1.0",
+	"pb_version": "0.4.x",
+	"icon": "/imgs/sample.ico",
+	"author": {
+		"name": "AmirSaber Sharifi",
+		"email": "saber@amir.ninja",
+		"website": "http://www.amir.ninja",
+		"contributors": [{
+			"name": "Blake Callens",
+			"email": ""
+		}, {
+			"name": "Brian Hyder",
+			"email": ""
+		}]
+	},
+	"settings": [{
+		"name": "require_recaptcha_for_admin_login",
+		"value": true
+	}, {
+		"name": "require_recaptcha_for_user_login",
+		"value": true
+	}, {
+		"name": "google_recaptcha_site_key",
+		"value": ""
+	}, {
+		"name": "google_recaptcha_secret_key",
+		"value": ""
+	}],
+	"dependencies": {
+		"request": "2.65.0"
+	},
+	"permissions": {
+		"ACCESS_USER": [],
+		"ACCESS_WRITER": [],
+		"ACCESS_EDITOR": [],
+		"ACCESS_MANAGING_EDITOR": []
+	},
+	"main_module": {
+		"path": "google-recaptcha.js"
+	}
+}
